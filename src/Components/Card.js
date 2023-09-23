@@ -1,8 +1,12 @@
 import React from 'react'
+import { StyledCard } from './Styled/Card.Styled'
 
 const Card = () => {
   return (
-    <div>Card</div>
+    <StyledCard>
+
+        
+    </StyledCard>
   )
 }
 

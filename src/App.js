@@ -1,4 +1,4 @@
-import  GlobalStyles from "./Components/Styled/GlobalStyle";
+import GlobalStyles from "./Components/Styled/GlobalStyles";
 import Card from "./Components/Card";
 import Attribution from "./Components/Attribution";
 

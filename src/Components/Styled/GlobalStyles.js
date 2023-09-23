@@ -1,5 +1,5 @@
 
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 
 const GlobalStyles = createGlobalStyle`
@@ -11,18 +11,16 @@ const GlobalStyles = createGlobalStyle`
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: hsl(234, 29%, 20%);
+    background: hsl(234, 29%, 20%);
     display: flex;
     min-height: 100vh;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     justify-content: center;
 }
 
 img {
     width: 100%;
-    padding-left: 10px;
-    padding-right: 8px;
 }
 
 `
