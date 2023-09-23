@@ -1,9 +1,16 @@
+import  GlobalStyles from "./Components/Styled/GlobalStyle";
+import Card from "./Components/Card";
+import Attribution from "./Components/Attribution";
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <>
+      <GlobalStyles />
 
-    </div>
+      <Card />
+
+      <Attribution />
+    </>
   );
 }
 
