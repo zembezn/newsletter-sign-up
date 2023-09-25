@@ -11,12 +11,12 @@ const GlobalStyles = createGlobalStyle`
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: hsl(234, 29%, 20%);
+    background-color: hsl(234, 29%, 20%);
     display: flex;
-    min-height: 100vh;
-    align-items: center;
-    font-size: 16px;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
 }
 
 img {

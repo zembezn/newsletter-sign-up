@@ -3,10 +3,12 @@ import { StyledCard } from './Styled/Card.Styled'
 
 const Card = () => {
   return (
+    <>
     <StyledCard>
 
         
     </StyledCard>
+    </>
   )
 }
 
