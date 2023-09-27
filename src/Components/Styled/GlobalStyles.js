@@ -21,6 +21,7 @@ body {
 
 p {
     align-items: center;
+    color: hsl(234, 29%, 20%);
 }
 `
 
