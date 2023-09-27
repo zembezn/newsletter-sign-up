@@ -26,6 +26,10 @@ align-items: center;
 border-top-right-radius: 25px;
 border-bottom-right-radius: 25px;
 `
+export const Image = styled.img`
+max-width: 100%;
+display: flex;
+`
 export const Header = styled.h1`
 width: 100%;
 height: 20%;
@@ -40,6 +44,10 @@ color: hsl(235, 18%, 26%);
 display: flex;
 flex-direction: column;
 margin: 0 auto;
+`
+export const Icon = styled.img`
+max-width: 100%;
+padding-right: 5%;
 `
 export const List = styled.p`
 width: 100%;

@@ -19,11 +19,6 @@ body {
     font-size: 16px;
 }
 
-img {
-    max-width: 100%;
-
-}
-
 `
 
 export default GlobalStyles
