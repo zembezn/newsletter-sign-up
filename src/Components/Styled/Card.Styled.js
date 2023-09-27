@@ -38,8 +38,8 @@ color: hsl(234, 29%, 20%);
 display: flex;
 align-items: flex-end;
 justify-content: center;
-margin-left: 1%;
-margin-top: 10%;
+margin-left: 2%;
+margin-top: 12%;
 `
 export const Body = styled.div`
 max-width: 100%;
@@ -53,7 +53,7 @@ margin-top: 5%;
 `
 export const Statement = styled.div`
 display: flex;
-padding: 5% 0;
+padding-bottom: 5%;
 `
 export const Icon = styled.img`
 max-width: 100%;
@@ -64,7 +64,7 @@ width: 100%;
 height: 10%;
 display: flex;
 flex-direction: row;
-padding: 1% 0;
+padding: 1.5% 0;
 `
 export const Input = styled.div`
 width: 100%;
