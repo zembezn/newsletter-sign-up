@@ -1,22 +1,16 @@
 import styled from "styled-components";
 
+//Container
 export const StyledCard = styled.div`
 width: 900px;
-height: 640px;
+height: 600px;
 max-width: 100%;
 display: flex;
 background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
 `
-export const SignUp = styled.div`
-max-width: 100%;
-width: 55%;
-height: 100%;
-display: flex;
-flex-direction: column;
-border-top-left-radius: 25px;
-border-bottom-left-radius: 25px;
-`
+
+//Poster Page
 export const ImageContainer = styled.div`
 width: 55%;
 height: 100%;
@@ -26,9 +20,22 @@ align-items: center;
 border-top-right-radius: 25px;
 border-bottom-right-radius: 25px;
 `
-export const Image = styled.img`
+export const PosterImage = styled.img`
 max-width: 100%;
+height: 92%;
 display: flex;
+`
+
+//Sign-up Page
+export const SignUp = styled.div`
+max-width: 100%;
+width: 50%;
+height: 100%;
+display: flex;
+flex-direction: column;
+margin-left: 7%;
+border-top-left-radius: 25px;
+border-bottom-left-radius: 25px;
 `
 export const Header = styled.h1`
 width: 100%;
@@ -37,37 +44,61 @@ font-size: 350%;
 color: hsl(234, 29%, 20%);
 display: flex;
 align-items: flex-end;
-justify-content: center;
-margin-left: 2%;
 margin-top: 12%;
 `
 export const Body = styled.div`
-max-width: 100%;
-height: 50%;
-color: hsl(235, 18%, 26%);
 display: flex;
 flex-direction: column;
-padding: 0 5%;
-margin-left: 8%;
-margin-top: 5%;
 `
-export const Statement = styled.div`
+export const Statement = styled.p`
 display: flex;
-padding-bottom: 5%;
+padding: 5% 0;
 `
 export const Icon = styled.img`
-max-width: 100%;
 padding-right: 3%;
 `
 export const List = styled.p`
-width: 100%;
-height: 10%;
 display: flex;
 flex-direction: row;
-padding: 1.5% 0;
+padding: 2% 0;
 `
 export const Input = styled.div`
-width: 100%;
-height: 40%;
 display: flex;
+flex-direction: column;
+padding-top: 8%;
+`
+export const FieldLabel = styled.label`
+display: flex;
+color: hsl(234, 29%, 20%);
+font-size: 80%;
+font-weight: bold;
+padding-bottom: 2%;
+`
+export const TextField = styled.input`
+width: 90%;
+height: 50px;
+border-color: hsl(231, 7%, 60%);
+border-width: 1px;
+border-radius: 8px;
+border-style: solid;
+padding-left: 5%;
+cursor: pointer;
+`
+
+//Button
+export const StyledButton = styled.div`
+border-radius: 8px;
+width: 96%;
+height: 50px;
+cursor: pointer;
+background-color: hsl(234, 29%, 20%);
+color: hsl(0, 0%, 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 5%;
+
+&:hover {
+background-color: hsl(4, 100%, 67%);
+}
 `
