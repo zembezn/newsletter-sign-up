@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledCard, SignUp, ImageContainer, Header, Body, Input, List, Image, Icon } from './Styled/Card.Styled'
+import { StyledCard, SignUp, ImageContainer, Header, Body, Input, List, Image, Icon, Statement } from './Styled/Card.Styled'
 
 const Card = () => {
   return (
@@ -7,7 +7,10 @@ const Card = () => {
     <StyledCard>
       <SignUp>
         <Header>Stay Updated!</Header>
-        <Body>Join 60 000+ product managers receiving monthly updates on:
+        <Body>
+        <Statement>
+          Join 60 000+ product managers receiving monthly updates on:
+        </Statement>
         <List>
           <Icon src='./images/icon-list.svg' alt='icon' />
           <p>Product discovery and building what matters</p>

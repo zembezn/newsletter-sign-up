@@ -19,6 +19,9 @@ body {
     font-size: 16px;
 }
 
+p {
+    align-items: center;
+}
 `
 
 export default GlobalStyles
