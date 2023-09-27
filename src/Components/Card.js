@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledCard, SignUp, ImageContainer, Header, Body, Input, Image, List } from './Styled/Card.Styled'
+import { StyledCard, SignUp, ImageContainer, Header, Body, Input, List } from './Styled/Card.Styled'
 
 const Card = () => {
   return (
@@ -24,7 +24,7 @@ const Card = () => {
         <Input></Input>
       </SignUp>
       <ImageContainer>
-        <Image src='./images/illustration-sign-up-desktop.svg' alt='content psoter' />
+        <img src='./images/illustration-sign-up-desktop.svg' alt='content psoter' />
       </ImageContainer>
     </StyledCard>
     </>
