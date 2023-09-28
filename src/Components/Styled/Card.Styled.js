@@ -12,7 +12,7 @@ border-radius: 25px;
 
 //Poster Page
 export const ImageContainer = styled.div`
-width: 55%;
+width: 50%;
 height: 100%;
 display: flex;
 justify-content: center;
@@ -22,29 +22,28 @@ border-bottom-right-radius: 25px;
 `
 export const PosterImage = styled.img`
 max-width: 100%;
-height: 92%;
+height: 94%;
 display: flex;
 `
 
 //Sign-up Page
 export const SignUp = styled.div`
 max-width: 100%;
-width: 50%;
+width: 48%;
 height: 100%;
 display: flex;
 flex-direction: column;
+justify-content: center;
 margin-left: 7%;
 border-top-left-radius: 25px;
 border-bottom-left-radius: 25px;
 `
 export const Header = styled.h1`
 width: 100%;
-height: 20%;
 font-size: 350%;
 color: hsl(234, 29%, 20%);
 display: flex;
 align-items: flex-end;
-margin-top: 12%;
 `
 export const Body = styled.div`
 display: flex;
@@ -75,7 +74,7 @@ font-weight: bold;
 padding-bottom: 2%;
 `
 export const TextField = styled.input`
-width: 90%;
+width: 85%;
 height: 50px;
 border-color: hsl(231, 7%, 60%);
 border-width: 1px;
@@ -88,7 +87,7 @@ cursor: pointer;
 //Button
 export const StyledButton = styled.div`
 border-radius: 8px;
-width: 96%;
+width: 91%;
 height: 50px;
 cursor: pointer;
 background-color: hsl(234, 29%, 20%);
@@ -96,9 +95,9 @@ color: hsl(0, 0%, 100%);
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 5%;
+margin-top: 6%;
 
 &:hover {
-background-color: hsl(4, 100%, 67%);
+background: linear-gradient( to right, hsl(347, 95%, 60%), hsl(4, 100%, 67%));
 }
 `
