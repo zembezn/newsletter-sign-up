@@ -3,6 +3,7 @@ import { StyledCard, SignUp, ImageContainer, Header, Body, Input, List,
         PosterImage, Icon, Statement, TextField, FieldLabel } from './Styled/Card.Styled'
 import Button from './Button'
 
+
 const Card = () => {
   return (
     <>
@@ -29,6 +30,7 @@ const Card = () => {
               <p>And much more!</p>
             </List>
           </Body>
+          
           <Input>
             <FieldLabel>Email address</FieldLabel>
             <TextField type='text' placeholder='email@company.com' value={Text} />
@@ -43,6 +45,7 @@ const Card = () => {
         </ImageContainer>
 
       </StyledCard>
+
     </>
   )
 }

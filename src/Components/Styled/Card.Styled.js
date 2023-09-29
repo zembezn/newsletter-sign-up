@@ -6,6 +6,7 @@ width: 900px;
 height: 600px;
 max-width: 100%;
 display: flex;
+margin: 5%;
 background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
 `
@@ -84,6 +85,25 @@ padding-left: 5%;
 cursor: pointer;
 `
 
+//Error State
+export const Error = styled.div`
+width: 85%;
+height: 50px;
+border-color: hsl(353, 90%, 50%);
+background-color: hsla(353, 90%, 50%, 0.1);
+border-width: 1px;
+border-radius: 8px;
+border-style: solid;
+padding-left: 5%;
+`
+export const ErrorLabel = styled.label`
+display: flex;
+color: hsl(353, 90%, 50%);
+font-size: 80%;
+font-weight: bold;
+padding-bottom: 2%;
+`
+
 //Button
 export const StyledButton = styled.div`
 border-radius: 8px;
@@ -100,4 +120,10 @@ margin-top: 6%;
 &:hover {
 background: linear-gradient( to right, hsl(347, 95%, 60%), hsl(4, 100%, 67%));
 }
+`
+export const Attribute = styled.div`
+display: flex;
+justify-content: center;
+margin: 5%;
+color: hsl(0, 0%, 100%);
 `
