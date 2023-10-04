@@ -89,8 +89,8 @@ cursor: pointer;
 export const Error = styled.div`
 width: 85%;
 height: 50px;
-border-color: hsl(353, 90%, 50%);
-background-color: hsla(353, 90%, 50%, 0.1);
+border-color: hsl(353, 70%, 60%);
+background-color: hsla(353, 70%, 60%, 0.1);
 border-width: 1px;
 border-radius: 8px;
 border-style: solid;
@@ -98,7 +98,9 @@ padding-left: 5%;
 `
 export const ErrorLabel = styled.label`
 display: flex;
-color: hsl(353, 90%, 50%);
+justify-content: flex-end;
+padding-right: 10%;
+color: hsl(353, 70%, 60%);
 font-size: 80%;
 font-weight: bold;
 padding-bottom: 2%;
