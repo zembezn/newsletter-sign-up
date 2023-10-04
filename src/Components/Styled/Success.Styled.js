@@ -22,9 +22,9 @@ font-size: 350%;
 color: hsl(234, 29%, 20%);
 display: flex;
 `
-export const Statement = styled.p`
+export const Statement = styled.div`
 display: flex;
-padding: 8% 0;
+padding: 7% 0;
 line-height: 140%;
 `
 
