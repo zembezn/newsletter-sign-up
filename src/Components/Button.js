@@ -4,7 +4,7 @@ import { StyledButton } from './Styled/Card.Styled'
 
 const Button = ({ text, onClick }) => {
   return (
-    <StyledButton onClick={onClick} >{text}</StyledButton>
+    <StyledButton type='submit' onClick={onClick} >{text}</StyledButton>
   )
 }
 
