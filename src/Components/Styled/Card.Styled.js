@@ -57,7 +57,7 @@ padding: 5% 0;
 export const Icon = styled.img`
 padding-right: 3%;
 `
-export const List = styled.p`
+export const List = styled.div`
 display: flex;
 flex-direction: row;
 padding: 2% 0;
