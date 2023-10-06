@@ -1,7 +1,6 @@
 import GlobalStyles from "./Components/Styled/GlobalStyles";
 import Attribution from "./Components/Attribution";
 import Success from "./Components/Success";
-// import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { useState } from 'react'
 import { StyledCard, SignUp, ImageContainer, Header, Body, Input, List, 
         PosterImage, Icon, Statement, TextField, FieldLabel, Error, ErrorLabel, SubTitles, SubInput } from './Components/Styled/Card.Styled'
@@ -9,6 +8,7 @@ import Button from './Components/Button'
 
 const App = () => {
 
+const showSignUp = useState('') 
 const [email, setEmail] = useState('')
 const [error, setError] = useState(null)
 
@@ -55,60 +55,55 @@ const addEmail = async () => {
   return (
     <>
       <GlobalStyles />
-      
-      <>
-      <StyledCard>
+      {showSignUp &&      
+        <StyledCard>
 
-        <SignUp>
-          
-          <Header>Stay Updated!</Header>
-          <Body>
-            <Statement>
-              Join 60 000+ product managers receiving monthly updates on:
-            </Statement>
+          <SignUp>           
+            <Header>Stay Updated!</Header>
+            <Body>
+              <Statement>Join 60 000+ product managers receiving monthly updates on:</Statement>
 
-            <List>
-              <Icon src='./images/icon-list.svg' alt='icon' />
-              <p>Product discovery and building what matters</p>
-            </List>
-            <List>
-              <Icon src='./images/icon-list.svg' alt='icon' />
-              <p>Measuring to ensure updates are a success</p>
-            </List>
-            <List>
-              <Icon src='./images/icon-list.svg' alt='icon' />
-              <p>And much more!</p>
-            </List>
-          </Body>
+              <List>
+                <Icon src='./images/icon-list.svg' alt='icon' />
+                <p>Product discovery and building what matters</p>
+              </List>
+              <List>
+                <Icon src='./images/icon-list.svg' alt='icon' />
+                <p>Measuring to ensure updates are a success</p>
+              </List>
+              <List>
+                <Icon src='./images/icon-list.svg' alt='icon' />
+                <p>And much more!</p>
+              </List>
+            </Body>
 
-          <Input onSubmit={onSubmit} >
-            <SubTitles>
-              <SubInput>
-                <FieldLabel>Email address</FieldLabel>
-              </SubInput>
-              <SubInput>
-                {error && <ErrorLabel>Valid email required</ErrorLabel> }
-              </SubInput>
-            </SubTitles>
-            
-            {error ? (<Error type='text' placeholder=""  />)
-                   : (<TextField type='text' placeholder='email@company.com' value={email} onChange={handleChange} onAdd={addEmail} />)}
-          </Input>
+            <Input onSubmit={onSubmit} >
+              <SubTitles>
+                <SubInput>
+                  <FieldLabel>Email address</FieldLabel>
+                </SubInput>
+                <SubInput>
+                  {error && <ErrorLabel>Valid email required</ErrorLabel> }
+                </SubInput>
+              </SubTitles>
+              
+              {error ? (<Error type='text' placeholder=""  />)
+                    : (<TextField type='text' placeholder='email@company.com' value={email} onChange={handleChange} onAdd={addEmail} />)}
+            </Input>
 
-          <Button text='Subscribe to monthly newsletter' onClick={onSubmit}  />
+            <Button text='Subscribe to monthly newsletter' onClick={onSubmit}  />
 
-        </SignUp>
+          </SignUp>
 
-        <ImageContainer>
-          <PosterImage src='./images/illustration-sign-up-desktop.svg' alt='content psoter' />
-        </ImageContainer>
+          <ImageContainer>
+            <PosterImage src='./images/illustration-sign-up-desktop.svg' alt='content psoter' />
+          </ImageContainer>
 
-      </StyledCard>
+        </StyledCard> 
+      }
 
-    </>
-
+      <Success /> 
       <Attribution />
-      <Success />
     </>
   );
 }
