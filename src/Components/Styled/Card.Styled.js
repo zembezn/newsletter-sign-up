@@ -66,16 +66,25 @@ export const Input = styled.div`
 display: flex;
 flex-direction: column;
 padding-top: 8%;
+max-width: 90%;
+`
+export const SubTitles = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+`
+export const SubInput = styled.div`
+display: flex;
 `
 export const FieldLabel = styled.label`
 display: flex;
 color: hsl(234, 29%, 20%);
 font-size: 80%;
 font-weight: bold;
-padding-bottom: 2%;
+padding-bottom: 8%;
 `
 export const TextField = styled.input`
-width: 85%;
+width: 95%;
 height: 50px;
 border-color: hsl(231, 7%, 60%);
 border-width: 1px;
@@ -87,7 +96,7 @@ cursor: pointer;
 
 //Error State
 export const Error = styled.input`
-width: 85%;
+width: 95%;
 height: 50px;
 border-color: hsl(353, 70%, 60%);
 background-color: hsla(353, 70%, 60%, 0.1);
@@ -95,15 +104,14 @@ border-width: 1px;
 border-radius: 8px;
 border-style: solid;
 padding-left: 5%;
+cursor: pointer;
 `
 export const ErrorLabel = styled.label`
 display: flex;
-justify-content: flex-end;
-padding-right: 10%;
 color: hsl(353, 70%, 60%);
 font-size: 80%;
 font-weight: bold;
-padding-bottom: 2%;
+padding-bottom: 8%;
 `
 
 //Button

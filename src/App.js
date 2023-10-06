@@ -4,7 +4,7 @@ import Success from "./Components/Success";
 // import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { useState } from 'react'
 import { StyledCard, SignUp, ImageContainer, Header, Body, Input, List, 
-        PosterImage, Icon, Statement, TextField, FieldLabel, Error, ErrorLabel } from './Components/Styled/Card.Styled'
+        PosterImage, Icon, Statement, TextField, FieldLabel, Error, ErrorLabel, SubTitles, SubInput } from './Components/Styled/Card.Styled'
 import Button from './Components/Button'
 
 const App = () => {
@@ -23,7 +23,7 @@ const handleChange = (e) => {
 const onSubmit = (e) => {
   e.preventDefault()
 
-  setError(null);
+
   setError('')
 
   if(isValidEmail(email)) {
@@ -82,9 +82,15 @@ const addEmail = async () => {
           </Body>
 
           <Input onSubmit={onSubmit} >
-            <FieldLabel>Email address</FieldLabel>
+            <SubTitles>
+              <SubInput>
+                <FieldLabel>Email address</FieldLabel>
+              </SubInput>
+              <SubInput>
+                {error && <ErrorLabel>Valid email required</ErrorLabel> }
+              </SubInput>
+            </SubTitles>
             
-            {error && <ErrorLabel>Valid email required</ErrorLabel> }
             {error ? (<Error type='text' placeholder=""  />)
                    : (<TextField type='text' placeholder='email@company.com' value={email} onChange={handleChange} onAdd={addEmail} />)}
           </Input>
