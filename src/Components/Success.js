@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyledCard, Icon, Header, Statement } from './Styled/Success.Styled'
 import Button from './Dismiss.Button';
-import Attribution from './Attribution';
 
 const Success = () => {
   return (
@@ -20,7 +19,6 @@ const Success = () => {
 
         </StyledCard>
 
-        <Attribution />
     </>
   )
 }
