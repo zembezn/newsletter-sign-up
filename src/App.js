@@ -1,6 +1,7 @@
 import GlobalStyles from "./Components/Styled/GlobalStyles";
 import Attribution from "./Components/Attribution";
 import Success from "./Components/Success";
+// import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { useState } from 'react'
 import { StyledCard, SignUp, ImageContainer, Header, Body, Input, List, 
         PosterImage, Icon, Statement, TextField, FieldLabel, Error, ErrorLabel } from './Components/Styled/Card.Styled'
@@ -23,6 +24,7 @@ const onSubmit = (e) => {
   e.preventDefault()
 
   setError(null);
+  setError('')
 
   if(isValidEmail(email)) {
     console.log('The email is valid')
@@ -81,9 +83,9 @@ const addEmail = async () => {
 
           <Input onSubmit={onSubmit} >
             <FieldLabel>Email address</FieldLabel>
-            <ErrorLabel>Valid email required</ErrorLabel>
-
-            {error ? (<Error type='text' />)
+            
+            {error && <ErrorLabel>Valid email required</ErrorLabel> }
+            {error ? (<Error type='text' placeholder=""  />)
                    : (<TextField type='text' placeholder='email@company.com' value={email} onChange={handleChange} onAdd={addEmail} />)}
           </Input>
 
