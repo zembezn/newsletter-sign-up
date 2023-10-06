@@ -86,7 +86,7 @@ cursor: pointer;
 `
 
 //Error State
-export const Error = styled.div`
+export const Error = styled.input`
 width: 85%;
 height: 50px;
 border-color: hsl(353, 70%, 60%);
