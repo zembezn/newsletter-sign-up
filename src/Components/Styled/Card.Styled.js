@@ -6,7 +6,7 @@ width: 900px;
 height: 600px;
 max-width: 100%;
 display: flex;
-margin: 5%;
+margin: auto;
 background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
 `
