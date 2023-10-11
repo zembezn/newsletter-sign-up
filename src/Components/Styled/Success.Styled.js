@@ -9,7 +9,7 @@ display: flex;
 flex-direction: column;
 background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
-margin: auto;
+margin: 5% auto;
 padding: 6% 8%;
 `
 export const Icon = styled.img`
