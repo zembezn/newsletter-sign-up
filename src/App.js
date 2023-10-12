@@ -4,11 +4,12 @@ import { useState } from 'react'
 import { StyledCard, SignUp, ImageContainer, Header, Body, Input, List, 
         PosterImage, Icon, Statement, TextField, FieldLabel, Error, ErrorLabel, SubTitles, SubInput } from './Components/Styled/Card.Styled'
 import Button from './Components/Button'
-// import Success from './Components/Success'
+import Success from './Components/Success'
 
 const App = () => {
 
-const showSignUp = useState('') 
+const showSignUp = useState('')
+const successful = useState(false) 
 const [email, setEmail] = useState('')
 const [error, setError] = useState(null)
 
@@ -71,8 +72,8 @@ const onSubmit = (e) => {
                 </SubInput>
               </SubTitles>
               
-              {error ? (<Error type='email' placeholder=""  />)
-                    : (<TextField type='email' id='email' placeholder='email@company.com' value={email} onChange={handleChange} />)}
+              {error ? (<Error type='email' id="error" placeholder="" value={email} onChange={handleChange} autoComplete="on" />)
+                    : (<TextField type='email' id='email' placeholder='email@company.com' value={email} onChange={handleChange} autoComplete="on" />)}
             </Input>
 
             <Button type='submit' text='Subscribe to monthly newsletter' onClick={onSubmit}  />
