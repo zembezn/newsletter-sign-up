@@ -76,7 +76,7 @@ justify-content: space-between;
 export const SubInput = styled.div`
 display: flex;
 `
-export const FieldLabel = styled.label`
+export const FieldLabel = styled.p`
 display: flex;
 color: hsl(234, 29%, 20%);
 font-size: 80%;
@@ -98,6 +98,7 @@ cursor: pointer;
 export const Error = styled.input`
 width: 95%;
 height: 50px;
+color: hsl(353, 70%, 60%);
 border-color: hsl(353, 70%, 60%);
 background-color: hsla(353, 70%, 60%, 0.1);
 border-width: 1px;
