@@ -1,10 +1,10 @@
 import GlobalStyles from "./Components/Styled/GlobalStyles";
 import Attribution from "./Components/Attribution";
-import Success from "./Components/Success";
 import { useState } from 'react'
 import { StyledCard, SignUp, ImageContainer, Header, Body, Input, List, 
         PosterImage, Icon, Statement, TextField, FieldLabel, Error, ErrorLabel, SubTitles, SubInput } from './Components/Styled/Card.Styled'
 import Button from './Components/Button'
+// import Success from './Components/Success'
 
 const App = () => {
 
@@ -33,22 +33,6 @@ const onSubmit = (e) => {
   }
 
   setEmail('')
-
-}
-
-//Add Email
-const addEmail = async () => {
-  const res = await fetch('http://localhost:5000/emails', {
-    method: 'POST',
-    headers: {
-      'Content-type': 'application/json',
-    },
-    body: JSON.stringify(),
-  })
-
-  const data = await res.json()
-
-  setEmail([...email, data])
 
 }
 
@@ -87,11 +71,11 @@ const addEmail = async () => {
                 </SubInput>
               </SubTitles>
               
-              {error ? (<Error type='text' placeholder=""  />)
-                    : (<TextField type='text' placeholder='email@company.com' value={email} onChange={handleChange} onAdd={addEmail} />)}
+              {error ? (<Error type='email' placeholder=""  />)
+                    : (<TextField type='email' id='email' placeholder='email@company.com' value={email} onChange={handleChange} />)}
             </Input>
 
-            <Button text='Subscribe to monthly newsletter' onClick={onSubmit}  />
+            <Button type='submit' text='Subscribe to monthly newsletter' onClick={onSubmit}  />
 
           </SignUp>
 
@@ -102,8 +86,10 @@ const addEmail = async () => {
         </StyledCard> 
       }
 
-      <Success /> 
+       
+
       <Attribution />
+      
     </>
   );
 }
