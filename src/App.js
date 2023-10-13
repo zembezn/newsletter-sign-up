@@ -64,7 +64,7 @@ const Dismiss = () => {
 
         : (<Container>
             <SignUp>           
-              <Title>Stay Updated!</Title>
+              <Title>Stay updated!</Title>
               <Body>
                 <Message>Join 60 000+ product managers receiving monthly updates on:</Message>
 

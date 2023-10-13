@@ -80,18 +80,19 @@ display: flex;
 export const FieldLabel = styled.p`
 display: flex;
 color: hsl(234, 29%, 20%);
-font-size: 80%;
+font-size: 70%;
 font-weight: bold;
-padding-bottom: 8%;
+padding-bottom: 12%;
 `
 export const TextField = styled.input`
 width: 95%;
-height: 50px;
+height: 55px;
 border-color: hsl(231, 7%, 60%);
 border-width: 1px;
 border-radius: 8px;
 border-style: solid;
 padding-left: 5%;
+font-size: 100%;
 cursor: pointer;
 `
 
@@ -111,7 +112,7 @@ cursor: pointer;
 export const ErrorLabel = styled.label`
 display: flex;
 color: hsl(353, 70%, 60%);
-font-size: 80%;
+font-size: 70%;
 font-weight: bold;
 padding-bottom: 8%;
 `
@@ -120,7 +121,7 @@ padding-bottom: 8%;
 export const StyledButton = styled.div`
 border-radius: 8px;
 width: 91%;
-height: 50px;
+height: 55px;
 cursor: pointer;
 background-color: hsl(234, 29%, 20%);
 color: hsl(0, 0%, 100%);
