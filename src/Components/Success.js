@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { StyledCard, Icon, Header, Statement } from './Styled/Success.Styled'
 import Button from './Dismiss.Button';
 
@@ -16,6 +17,7 @@ const Success = () => {
             </Statement>
 
             <Button text='Dismiss message' />
+            <Link to='/' />
 
         </StyledCard>
 

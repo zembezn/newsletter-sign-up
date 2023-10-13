@@ -4,12 +4,11 @@ import { useState } from 'react'
 import { StyledCard, SignUp, ImageContainer, Header, Body, Input, List, 
         PosterImage, Icon, Statement, TextField, FieldLabel, Error, ErrorLabel, SubTitles, SubInput } from './Components/Styled/Card.Styled'
 import Button from './Components/Button'
-import Success from './Components/Success'
+// import Success from './Components/Success'
 
 const App = () => {
 
-const showSignUp = useState('')
-const successful = useState(false) 
+const showSignUp = useState('') 
 const [email, setEmail] = useState('')
 const [error, setError] = useState(null)
 
