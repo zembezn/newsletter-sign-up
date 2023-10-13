@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 //Container
-export const StyledCard = styled.div`
+export const Container = styled.div`
 width: 900px;
 height: 600px;
 max-width: 100%;
 display: flex;
+justify-content: center;
 margin: 5% auto;
 background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
@@ -39,7 +40,7 @@ margin-left: 7%;
 border-top-left-radius: 25px;
 border-bottom-left-radius: 25px;
 `
-export const Header = styled.h1`
+export const Title = styled.h1`
 width: 100%;
 font-size: 350%;
 color: hsl(234, 29%, 20%);
@@ -50,11 +51,11 @@ export const Body = styled.div`
 display: flex;
 flex-direction: column;
 `
-export const Statement = styled.p`
+export const Message = styled.p`
 display: flex;
 padding: 5% 0;
 `
-export const Icon = styled.img`
+export const Points = styled.img`
 padding-right: 3%;
 `
 export const List = styled.div`
@@ -134,7 +135,8 @@ background: linear-gradient( to right, hsl(347, 95%, 60%), hsl(4, 100%, 67%));
 `
 export const Attribute = styled.div`
 display: flex;
+font-size: 12px;
 justify-content: center;
-margin: 5%;
 color: hsl(0, 0%, 100%);
+margin-bottom: 5%;
 `

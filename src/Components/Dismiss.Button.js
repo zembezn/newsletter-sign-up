@@ -2,15 +2,15 @@ import React from 'react'
 import PropTypes from "prop-types"
 import { StyledButton } from './Styled/Success.Styled'
 
-const Button = ({ text, onClick }) => {
+const DismissButton = ({ text, onClick }) => {
   return (
     <StyledButton onClick={onClick} >{text}</StyledButton>
   )
 }
 
-Button.propTypes = {
+DismissButton.propTypes = {
     text: PropTypes.string,
     onClick: PropTypes.func
 }
 
-export default Button
+export default DismissButton

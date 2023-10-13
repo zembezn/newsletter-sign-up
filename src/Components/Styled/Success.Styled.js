@@ -1,17 +1,22 @@
 import styled from "styled-components";
 
 //Container
+export const SuccessContainer = styled.div`
+width: 430px;
+height: 480px;
+max-width: 100%;
+display: flex;
+background-color: hsl(0, 0%, 100%);
+border-radius: 25px;
+margin: 25% auto;
+`
 export const StyledCard = styled.div`
 width: 360px;
 height: 400px;
-max-width: 100%;
 display: flex;
+margin: auto;
 flex-direction: column;
-background-color: hsl(0, 0%, 100%);
-border-radius: 25px;
-margin: 5% auto;
-padding: 6% 8%;
-`
+` 
 export const Icon = styled.img`
 width: 18%;
 height: 18%;
