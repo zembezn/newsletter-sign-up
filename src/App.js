@@ -1,11 +1,14 @@
-import GlobalStyles from "./Components/Styled/GlobalStyles";
-import { Attribute } from './Components/Styled/Card.Styled'
+import GlobalStyles from "./Components/Styled/GlobalStyles"
 import { useState } from 'react'
+import { Container, SignUp, ImageContainer, Title, Body, Input, List, Points, Message, TextField, FieldLabel, Error, ErrorLabel, SubTitles, SubInput } from './Components/Styled/Card.Styled'
 import { SuccessContainer, Icon, Header, Statement, StyledCard } from './Components/Styled/Success.Styled'
-import DismissButton from './Components/Dismiss.Button';
-import { Container, SignUp, ImageContainer, Title, Body, Input, List, 
-        PosterImage, Points, Message, TextField, FieldLabel, Error, ErrorLabel, SubTitles, SubInput } from './Components/Styled/Card.Styled'
+import { Attribute } from './Components/Styled/Card.Styled'
 import Button from './Components/Button'
+import DismissButton from './Components/Dismiss.Button';
+import icon from './images/icon-list.svg'
+import successIcon from './images/icon-success.svg'
+import desktopImage from './images/illustration-sign-up-desktop.svg'
+import mobileImage from './images/illustration-sign-up-mobile.svg'
 
 const App = () => {
 
@@ -47,7 +50,7 @@ const Dismiss = () => {
 
           (<SuccessContainer>
             <StyledCard>
-              <Icon src='./images/icon-success.svg' alt='success icon' />
+              <Icon src={successIcon} alt='success icon' />
 
               <Header>Thanks for subscribing!</Header>
               
@@ -69,15 +72,15 @@ const Dismiss = () => {
                 <Message>Join 60 000+ product managers receiving monthly updates on:</Message>
 
                 <List>
-                  <Points src='./images/icon-list.svg' alt='icon' />
+                  <Points src={icon} alt='icon' />
                   <p>Product discovery and building what matters</p>
                 </List>
                 <List>
-                  <Points src='./images/icon-list.svg' alt='icon' />
+                  <Points src={icon} alt='icon' />
                   <p>Measuring to ensure updates are a success</p>
                 </List>
                 <List>
-                  <Points src='./images/icon-list.svg' alt='icon' />
+                  <Points src={icon} alt='icon' />
                   <p>And much more!</p>
                 </List>
               </Body>
@@ -100,12 +103,13 @@ const Dismiss = () => {
 
             </SignUp>
 
-            <ImageContainer>
-              <PosterImage src='./images/illustration-sign-up-desktop.svg' alt='content psoter' />
+            <ImageContainer media={mobileImage} >
+              <img src={desktopImage} alt='desktop poster' />
+              <img className="mobile" alt="mobile poster" />
             </ImageContainer>
 
-          </Container> )
-        } 
+          </Container> 
+        )} 
 
           <Attribute>
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="">Frontend Mentor</a>. 

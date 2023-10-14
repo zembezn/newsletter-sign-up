@@ -10,8 +10,17 @@ justify-content: center;
 margin: 5% auto;
 background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
-`
 
+@media (max-width: 375px) {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    border-radius: 0;
+}
+`
 //Poster Page
 export const ImageContainer = styled.div`
 width: 50%;
@@ -21,13 +30,31 @@ justify-content: center;
 align-items: center;
 border-top-right-radius: 25px;
 border-bottom-right-radius: 25px;
-`
-export const PosterImage = styled.img`
-max-width: 100%;
-height: 94%;
-display: flex;
-`
 
+img {
+    max-width: 100%;
+    height: 95%;
+}
+
+img.mobile {
+    display: none;
+}
+
+@media (max-width: 375px) {
+    img {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    img.mobile {
+        display: flex;
+        content: url(${({ media }) => media });
+        
+    }
+}
+
+`
 //Sign-up Page
 export const SignUp = styled.div`
 max-width: 100%;
@@ -109,7 +136,7 @@ border-style: solid;
 padding-left: 5%;
 cursor: pointer;
 `
-export const ErrorLabel = styled.label`
+export const ErrorLabel = styled.p`
 display: flex;
 color: hsl(353, 70%, 60%);
 font-size: 70%;
