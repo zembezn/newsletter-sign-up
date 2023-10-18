@@ -1,7 +1,7 @@
 import GlobalStyles from "./Components/Styled/GlobalStyles"
 import { useState } from 'react'
 import { Container, SignUp, ImageContainer, Title, Body, Input, List, Points, Message, TextField, FieldLabel, Error, ErrorLabel, SubTitles, SubInput } from './Components/Styled/Card.Styled'
-import { SuccessContainer, Icon, Header, Statement, StyledCard } from './Components/Styled/Success.Styled'
+import { SuccessContainer, Icon, Header, Statement, StyledCard, ButtonContainer } from './Components/Styled/Success.Styled'
 import { Attribute } from './Components/Styled/Card.Styled'
 import Button from './Components/Button'
 import DismissButton from './Components/Dismiss.Button';
@@ -60,8 +60,9 @@ const Dismiss = () => {
                   Please open it and click the button inside to confirm your subscription.
                 </p>
               </Statement>
-
+            <ButtonContainer>
               <DismissButton text='Dismiss message' onClick={Dismiss} />
+            </ButtonContainer>
             </StyledCard>
            </SuccessContainer>)
 

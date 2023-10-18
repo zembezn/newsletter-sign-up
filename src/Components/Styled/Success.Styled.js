@@ -9,6 +9,14 @@ display: flex;
 background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
 margin: 25% auto;
+
+@media (max-width: 375px) {
+    width: 375px;
+    height: 650px;
+    border-radius: 0;
+    margin: 0; 
+    margin-bottom: 10%;
+}
 `
 export const StyledCard = styled.div`
 width: 360px;
@@ -16,28 +24,47 @@ height: 400px;
 display: flex;
 margin: auto;
 flex-direction: column;
+
+@media (max-width: 375px) {
+    margin-top: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 ` 
 export const Icon = styled.img`
 width: 18%;
 height: 18%;
 padding-bottom: 8%;
+
+@media (max-width: 375px) {
+    width: 18%;
+    height: 18%;
+}
 `
 export const Header = styled.h1`
 font-size: 350%;
 color: hsl(234, 29%, 20%);
 display: flex;
+
+@media (max-width: 375px) {
+    font-size: 250%;
+}
 `
 export const Statement = styled.div`
 display: flex;
 padding: 7% 0;
 line-height: 140%;
+
+@media (max-width: 375px) {
+    padding-bottom: 30%;
+}
 `
 
 //Button
 export const StyledButton = styled.div`
 border-radius: 8px;
 width: 100%;
-height: 100%;
+height: 60px;
 cursor: pointer;
 background-color: hsl(234, 29%, 20%);
 color: hsl(0, 0%, 100%);
@@ -48,4 +75,12 @@ align-items: center;
 &:hover {
 background: linear-gradient( to right, hsl(347, 95%, 60%), hsl(4, 100%, 67%));
 }
+
+@media (max-width: 375px) {
+    width: 100%;
+    height: 55px;
+}
+`
+export const ButtonContainer = styled.div`
+    display: flex;
 `

@@ -12,13 +12,14 @@ background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
 
 @media (max-width: 375px) {
-    width: 100%;
+    width: auto;
     height: 100%;
     justify-content: center;
     display: flex;
     flex-direction: column-reverse;
     margin: 0;
     border-radius: 0;
+    margin-bottom: 8%;
 }
 `
 //Poster Page
@@ -32,7 +33,6 @@ border-top-right-radius: 25px;
 border-bottom-right-radius: 25px;
 
 img {
-    max-width: 100%;
     height: 95%;
 }
 
@@ -44,16 +44,13 @@ img.mobile {
     img {
         display: none;
     }
-}
 
-@media (max-width: 375px) {
     img.mobile {
         display: flex;
         content: url(${({ media }) => media });
         
     }
 }
-
 `
 //Sign-up Page
 export const SignUp = styled.div`
@@ -66,6 +63,13 @@ justify-content: center;
 margin-left: 7%;
 border-top-left-radius: 25px;
 border-bottom-left-radius: 25px;
+
+@media (max-width: 375px) {
+    width: auto;
+    height: auto;
+    margin-right: 7%;
+}
+
 `
 export const Title = styled.h1`
 width: 100%;
@@ -73,6 +77,11 @@ font-size: 350%;
 color: hsl(234, 29%, 20%);
 display: flex;
 align-items: flex-end;
+
+@media (max-width: 375px) {
+    font-size: 250%;
+    padding-top: 5%;  
+}
 `
 export const Body = styled.div`
 display: flex;
@@ -100,6 +109,11 @@ export const SubTitles = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+
+@media (max-width: 375px) {
+    width: 110%;
+    justify-content: space-between;
+}
 `
 export const SubInput = styled.div`
 display: flex;
@@ -121,6 +135,10 @@ border-style: solid;
 padding-left: 5%;
 font-size: 100%;
 cursor: pointer;
+
+@media (max-width: 375px) {
+    width: 105%;
+}
 `
 
 //Error State
@@ -135,6 +153,10 @@ border-radius: 8px;
 border-style: solid;
 padding-left: 5%;
 cursor: pointer;
+
+@media (max-width: 375px) {
+    width: 105%;
+}
 `
 export const ErrorLabel = styled.p`
 display: flex;
@@ -158,7 +180,12 @@ align-items: center;
 margin-top: 6%;
 
 &:hover {
-background: linear-gradient( to right, hsl(347, 95%, 60%), hsl(4, 100%, 67%));
+    background: linear-gradient( to right, hsl(347, 95%, 60%), hsl(4, 100%, 67%));
+}
+
+@media (max-width: 375px) {
+    margin-bottom: 10%;
+    width: 100%;
 }
 `
 export const Attribute = styled.div`
