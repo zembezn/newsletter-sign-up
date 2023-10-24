@@ -12,7 +12,7 @@ margin: 25% auto;
 
 @media (max-width: 375px) {
     width: 375px;
-    height: 650px;
+    height: 680px;
     border-radius: 0;
     margin: 0; 
     margin-bottom: 10%;
@@ -56,7 +56,7 @@ padding: 7% 0;
 line-height: 140%;
 
 @media (max-width: 375px) {
-    padding-bottom: 30%;
+    padding-bottom: 40%;
 }
 `
 

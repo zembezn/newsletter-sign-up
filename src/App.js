@@ -1,5 +1,5 @@
 import GlobalStyles from "./Components/Styled/GlobalStyles"
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Container, SignUp, ImageContainer, Title, Body, Input, List, Points, Message, TextField, FieldLabel, Error, ErrorLabel, SubTitles, SubInput } from './Components/Styled/Card.Styled'
 import { SuccessContainer, Icon, Header, Statement, StyledCard, ButtonContainer } from './Components/Styled/Success.Styled'
 import { Attribute } from './Components/Styled/Card.Styled'
@@ -15,9 +15,14 @@ const App = () => {
 const [email, setEmail] = useState('')
 const [error, setError] = useState(null)
 const [successful, setSuccessful] = useState(false) 
+const refEmail = useRef(null)
 
 function isValidEmail(email) {
   return /\S+@\S+\.\S+/.test(email);
+}
+
+const currentEmailValue = () => {
+   return refEmail.current.value;
 }
 
 const handleChange = (e) => {
@@ -56,7 +61,7 @@ const Dismiss = () => {
               
               <Statement>
                 <p>
-                  A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
+                  A confirmation email has been sent to <span><b>{currentEmailValue()}</b></span>. 
                   Please open it and click the button inside to confirm your subscription.
                 </p>
               </Statement>
@@ -96,8 +101,8 @@ const Dismiss = () => {
                   </SubInput>
                 </SubTitles>
                 
-                {error ? (<Error type='email' id="error" placeholder="" value={email} onChange={handleChange} autoComplete="on" />)
-                      : (<TextField type='email' id='email' placeholder='email@company.com' value={email} onChange={handleChange} autoComplete="on" />)}
+                {error ? (<Error type='email' id="error" placeholder="" value={email} onChange={handleChange} ref={refEmail} autoComplete="on" />)
+                      : (<TextField type='email' id='email' placeholder='email@company.com' value={email} onChange={handleChange} ref={refEmail} autoComplete="on" />)}
               </Input>
 
               <Button type='submit' text='Subscribe to monthly newsletter' onClick={onSubmit}  />
