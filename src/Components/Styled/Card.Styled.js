@@ -41,6 +41,10 @@ img.mobile {
 }
 
 @media (max-width: 375px) {
+
+    display: flex;
+    width: 100%;
+
     img {
         display: none;
     }
@@ -48,7 +52,8 @@ img.mobile {
     img.mobile {
         display: flex;
         content: url(${({ media }) => media });
-        
+        align-items: normal;
+        justify-content: center;
     }
 }
 `
@@ -80,16 +85,21 @@ align-items: flex-end;
 
 @media (max-width: 375px) {
     font-size: 250%;
-    padding-top: 5%;  
+    padding-top: 10%;
+    padding-bottom: 3%;
 }
 `
 export const Body = styled.div`
 display: flex;
 flex-direction: column;
+
+@media (max-width: 375px) {
+    font-size: 95%;
+}
 `
 export const Message = styled.p`
 display: flex;
-padding: 5% 0;
+padding: 8% 0;
 `
 export const Points = styled.img`
 padding-right: 3%;
@@ -184,7 +194,7 @@ margin-top: 6%;
 }
 
 @media (max-width: 375px) {
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     width: 100%;
 }
 `
