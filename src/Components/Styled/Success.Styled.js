@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 //Container
 export const SuccessContainer = styled.div`
-width: 430px;
-height: 480px;
+width: 500px;
+height: 530px;
 max-width: 100%;
 display: flex;
 background-color: hsl(0, 0%, 100%);
@@ -20,7 +20,7 @@ margin: 25% auto;
 `
 export const StyledCard = styled.div`
 width: 360px;
-height: 400px;
+height: 440px;
 display: flex;
 margin: auto;
 flex-direction: column;
@@ -45,15 +45,15 @@ export const Header = styled.h1`
 font-size: 350%;
 color: hsl(234, 29%, 20%);
 display: flex;
-
 @media (max-width: 375px) {
     font-size: 250%;
 }
 `
 export const Statement = styled.div`
 display: flex;
-padding: 7% 0;
-line-height: 140%;
+padding-top: 5%;
+padding-bottom: 10%;
+line-height: 160%;
 
 @media (max-width: 375px) {
     padding-bottom: 40%;

@@ -100,6 +100,7 @@ flex-direction: column;
 export const Message = styled.p`
 display: flex;
 padding: 8% 0;
+padding-bottom: 3%;
 `
 export const Points = styled.img`
 padding-right: 3%;
