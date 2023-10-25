@@ -12,7 +12,7 @@ background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
 
 @media (max-width: 480px) {
-    width: 100%;
+    width: 480px;
     height: 100%;
     justify-content: center;
     display: flex;
@@ -24,8 +24,8 @@ border-radius: 25px;
 `
 //Poster Page
 export const ImageContainer = styled.div`
-width: 50%;
-height: 100%;
+max-width: 100%;
+height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -50,6 +50,9 @@ img.mobile {
     }
 
     img.mobile {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
         display: flex;
         content: url(${({ media }) => media });
         align-items: normal;
