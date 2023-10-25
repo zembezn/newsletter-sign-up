@@ -11,7 +11,7 @@ margin: 5% auto;
 background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
     width: auto;
     height: 100%;
     justify-content: center;
