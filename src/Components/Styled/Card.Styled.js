@@ -11,8 +11,8 @@ margin: 5% auto;
 background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
 
-@media (max-width: 390px) {
-    width: auto;
+@media (max-width: 480px) {
+    width: 100%;
     height: 100%;
     justify-content: center;
     display: flex;
@@ -40,7 +40,7 @@ img.mobile {
     display: none;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
 
     display: flex;
     width: 100%;
@@ -69,7 +69,7 @@ margin-left: 7%;
 border-top-left-radius: 25px;
 border-bottom-left-radius: 25px;
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
     width: auto;
     height: auto;
     margin-right: 7%;
@@ -83,7 +83,7 @@ color: hsl(234, 29%, 20%);
 display: flex;
 align-items: flex-end;
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
     font-size: 250%;
     padding-top: 10%;
     padding-bottom: 3%;
@@ -93,7 +93,7 @@ export const Body = styled.div`
 display: flex;
 flex-direction: column;
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
     font-size: 95%;
 }
 `
@@ -121,7 +121,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
     width: 110%;
     justify-content: space-between;
 }
@@ -147,7 +147,7 @@ padding-left: 5%;
 font-size: 100%;
 cursor: pointer;
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
     width: 105%;
 }
 `
@@ -165,7 +165,7 @@ border-style: solid;
 padding-left: 5%;
 cursor: pointer;
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
     width: 105%;
 }
 `
@@ -194,7 +194,7 @@ margin-top: 6%;
     background: linear-gradient( to right, hsl(347, 95%, 60%), hsl(4, 100%, 67%));
 }
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
     margin-bottom: 15%;
     width: 100%;
 }
