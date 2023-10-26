@@ -10,8 +10,8 @@ background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
 margin: 25% auto;
 
-@media (max-width: 480px) {
-    width: 100%;
+@media (min-width: 0px) and (max-width: 768px) {
+    width: 375px;
     height: 100%;
     border-radius: 0;
     margin: 0; 
@@ -20,12 +20,14 @@ margin: 25% auto;
 `
 export const StyledCard = styled.div`
 width: 100%;
-height: 100%;
+height: auto;
 display: flex;
 margin: auto;
 flex-direction: column;
+justify-content: center;
+margin: 12%;
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     margin: 20% 5%;
 }
 ` 
@@ -34,13 +36,13 @@ width: 18%;
 height: 18%;
 padding-bottom: 8%;
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     width: 18%;
     height: 18%;
 }
 `
 export const Header = styled.h1`
-font-size: 350%;
+font-size: 340%;
 color: hsl(234, 29%, 20%);
 display: flex;
 @media (max-width: 375px) {
@@ -53,7 +55,7 @@ padding-top: 5%;
 padding-bottom: 10%;
 line-height: 160%;
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     padding-bottom: 40%;
 }
 `
@@ -74,11 +76,12 @@ align-items: center;
 background: linear-gradient( to right, hsl(347, 95%, 60%), hsl(4, 100%, 67%));
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     width: 100%;
-    height: 55px;
+    height: 60px;
 }
 `
 export const ButtonContainer = styled.div`
     display: flex;
+    
 `

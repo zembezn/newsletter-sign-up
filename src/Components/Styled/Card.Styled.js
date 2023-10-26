@@ -7,12 +7,12 @@ height: 600px;
 max-width: 100%;
 display: flex;
 justify-content: center;
-margin: 5% auto;
+margin: 5% 0;
 background-color: hsl(0, 0%, 100%);
-border-radius: 25px;
+border-radius: 35px;
 
-@media (max-width: 480px) {
-    width: 100%;
+@media (min-width: 0px) and (max-width: 768px) {
+    width: 375px;
     height: 100%;
     justify-content: center;
     display: flex;
@@ -24,8 +24,7 @@ border-radius: 25px;
 `
 //Poster Page
 export const ImageContainer = styled.div`
-max-width: 100%;
-height: auto;
+height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -33,14 +32,14 @@ border-top-right-radius: 25px;
 border-bottom-right-radius: 25px;
 
 img {
-    height: 95%;
+    height: 92%;
 }
 
 img.mobile {
     display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
     display: flex;
     width: 100%;
@@ -51,11 +50,8 @@ img.mobile {
 
     img.mobile {
         max-width: 100%;
-        height: auto;
-        width: 100%;
         display: flex;
         content: url(${({ media }) => media });
-        align-items: normal;
         justify-content: center;
     }
 }
@@ -66,16 +62,16 @@ max-width: 100%;
 width: 48%;
 height: 100%;
 display: flex;
+margin-left: 3%;
+margin-right: 1%;
 flex-direction: column;
 justify-content: center;
-margin-left: 7%;
 border-top-left-radius: 25px;
 border-bottom-left-radius: 25px;
 
-@media (max-width: 480px) {
-    width: auto;
-    height: auto;
-    margin-right: 7%;
+@media (max-width: 768px) {
+  width: 100%;
+  margin: 0;
 }
 
 `
@@ -86,24 +82,28 @@ color: hsl(234, 29%, 20%);
 display: flex;
 align-items: flex-end;
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     font-size: 250%;
     padding-top: 10%;
     padding-bottom: 3%;
+    padding-left: 7%;
 }
 `
 export const Body = styled.div`
 display: flex;
 flex-direction: column;
 
-@media (max-width: 480px) {
-    font-size: 95%;
+@media (max-width: 768px) {
+    padding: 0 7%;
+    line-height: 150%;
 }
 `
 export const Message = styled.p`
 display: flex;
-padding: 8% 0;
+padding: 4% 0;
 padding-bottom: 3%;
+padding-right: 5%;
+line-height: 150%;
 `
 export const Points = styled.img`
 padding-right: 3%;
@@ -112,20 +112,30 @@ export const List = styled.div`
 display: flex;
 flex-direction: row;
 padding: 2% 0;
+
+@media (max-width: 768px) {
+    align-items: flex-start;
+}
 `
 export const Input = styled.div`
 display: flex;
 flex-direction: column;
 padding-top: 8%;
 max-width: 90%;
+
+@media (max-width: 768px) {
+    padding-left: 6%;
+    max-width: 83%;
+}
 `
 export const SubTitles = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+width: 95%;
 
-@media (max-width: 480px) {
-    width: 110%;
+@media (max-width: 768px) {
+    width: 105%;
     justify-content: space-between;
 }
 `
@@ -140,7 +150,7 @@ font-weight: bold;
 padding-bottom: 12%;
 `
 export const TextField = styled.input`
-width: 95%;
+width: 90%;
 height: 55px;
 border-color: hsl(231, 7%, 60%);
 border-width: 1px;
@@ -150,14 +160,14 @@ padding-left: 5%;
 font-size: 100%;
 cursor: pointer;
 
-@media (max-width: 480px) {
-    width: 105%;
+@media (max-width: 768px) {
+    width: 100%;
 }
 `
 
 //Error State
 export const Error = styled.input`
-width: 95%;
+width: 90%;
 height: 50px;
 color: hsl(353, 70%, 60%);
 border-color: hsl(353, 70%, 60%);
@@ -168,8 +178,8 @@ border-style: solid;
 padding-left: 5%;
 cursor: pointer;
 
-@media (max-width: 480px) {
-    width: 105%;
+@media (max-width: 768px) {
+    width: 100%;
 }
 `
 export const ErrorLabel = styled.p`
@@ -183,7 +193,7 @@ padding-bottom: 8%;
 //Button
 export const StyledButton = styled.div`
 border-radius: 8px;
-width: 91%;
+width: 86.5%;
 height: 55px;
 cursor: pointer;
 background-color: hsl(234, 29%, 20%);
@@ -197,9 +207,11 @@ margin-top: 6%;
     background: linear-gradient( to right, hsl(347, 95%, 60%), hsl(4, 100%, 67%));
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     margin-bottom: 15%;
-    width: 100%;
+    width: 88%;
+    margin-left: 6%;
+    
 }
 `
 export const Attribute = styled.div`
