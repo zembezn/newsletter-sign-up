@@ -12,7 +12,7 @@ background-color: hsl(0, 0%, 100%);
 border-radius: 25px;
 
 @media (max-width: 480px) {
-    width: 480px;
+    width: 100%;
     height: 100%;
     justify-content: center;
     display: flex;

@@ -11,24 +11,22 @@ border-radius: 25px;
 margin: 25% auto;
 
 @media (max-width: 480px) {
-    width: 375px;
-    height: 680px;
+    width: 100%;
+    height: 100%;
     border-radius: 0;
     margin: 0; 
     margin-bottom: 10%;
 }
 `
 export const StyledCard = styled.div`
-width: 360px;
-height: 440px;
+width: 100%;
+height: 100%;
 display: flex;
 margin: auto;
 flex-direction: column;
 
 @media (max-width: 480px) {
-    margin-top: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 20% 5%;
 }
 ` 
 export const Icon = styled.img`
