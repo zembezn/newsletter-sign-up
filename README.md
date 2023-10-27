@@ -75,7 +75,7 @@ img.mobile {
     display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
     display: flex;
     width: 100%;
