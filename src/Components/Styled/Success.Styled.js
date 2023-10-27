@@ -7,7 +7,7 @@ height: 530px;
 max-width: 100%;
 display: flex;
 background-color: hsl(0, 0%, 100%);
-border-radius: 25px;
+border-radius: 35px;
 margin: 25% auto;
 
 @media (min-width: 0px) and (max-width: 768px) {
