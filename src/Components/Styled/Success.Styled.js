@@ -12,7 +12,7 @@ margin: 25% auto;
 
 @media (min-width: 0px) and (max-width: 768px) {
     width: 375px;
-    height: 100%;
+    height: 750px;
     border-radius: 0;
     margin: 0; 
     margin-bottom: 10%;
@@ -28,7 +28,7 @@ justify-content: center;
 margin: 12%;
 
 @media (max-width: 768px) {
-    margin: 20% 5%;
+    margin: 8% 5%;
 }
 ` 
 export const Icon = styled.img`
@@ -39,6 +39,7 @@ padding-bottom: 8%;
 @media (max-width: 768px) {
     width: 18%;
     height: 18%;
+    padding-top: 30%;
 }
 `
 export const Header = styled.h1`
@@ -83,5 +84,9 @@ background: linear-gradient( to right, hsl(347, 95%, 60%), hsl(4, 100%, 67%));
 `
 export const ButtonContainer = styled.div`
     display: flex;
+
+    @media (max-width: 768px) {
+        margin-top: 20%;
+    }
     
 `
